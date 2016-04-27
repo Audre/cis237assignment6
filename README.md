@@ -3,7 +3,7 @@
 ## Due 04-27-2016
 
 ## Author
-
+Audre Staffen
 ## Description
 
 You are to create a web application using ASP.NET MVC to manage our beverage database.
@@ -115,7 +115,8 @@ browser and delete all your cookies. I'm sure only a few are
 the culprit, but I don't know which ones.
 
 ## Outside Resources Used
-
+Google
 ## Known Problems, Issues, And/Or Errors in the Program
-
-
+None
+## Extra Credit
+Javascript delete confirmation
