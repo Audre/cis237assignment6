@@ -4501,7 +4501,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse {
-  background-color: #222222;
+  background-color: #07044a;
   border-color: #080808;
 }
 
@@ -6813,4 +6813,8 @@ td.visible-print {
   td.hidden-print {
     display: none !important;
   }
+}
+
+.h1Font{
+    font-family:cursive;
 }

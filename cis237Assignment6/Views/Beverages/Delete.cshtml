@@ -47,10 +47,21 @@
 
     @using (Html.BeginForm()) {
         @Html.AntiForgeryToken()
-
+        @*Creates a button to delete the item or go back to the list. If the user presses delete, a confirmation will pop up*@
         <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <input type="submit" value="Delete" class="btn btn-default" onclick="return confirm('Are you sure you want to delete that?')" /> |
             @Html.ActionLink("Back to List", "Index")
         </div>
+
+        <script>
+function myFunction() {
+    var x;
+    if (confirm("Are you sure you want to delete this?") == true) {
+        
+    } else {
+
+    }
+}
+        </script>
     }
 </div>

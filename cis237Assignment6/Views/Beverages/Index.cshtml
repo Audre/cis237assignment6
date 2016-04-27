@@ -6,6 +6,45 @@
 
 <h2>Index</h2>
 
+@*Makes text boxes to allow user to search for specific names, pack sizes, and min/max prices*@
+<div class="form-group">
+    <fieldset>
+        <legend>Search Filter</legend>
+        @{ 
+            // Create the form
+            using (Html.BeginForm("Filter", "Beverages", FormMethod.Post, new { @class = "form-inline" }))
+                
+
+            {
+                // CSRF token
+                @Html.AntiForgeryToken()
+
+
+                // Create a label and text box for the name filter
+                <label for="name">Name: </label>
+                @Html.TextBox("name", (string)ViewBag.filterName)
+                // Create a label and text box for the pack filter
+                <label for="pack"> Pack: </label>
+                @Html.TextBox("pack", (string)ViewBag.filterPack)
+                // Create a label and text box for the minimum price filter
+                <label for="min"> Minimum Price: </label>
+                @Html.TextBox("min", (string)ViewBag.filterMin)
+                // Create a label and text box for the maximum price filter
+                <label for="max">Maximum Price: </label>
+                @Html.TextBox("max", (string)ViewBag.filterMax)
+
+                // Create the button to post the filters
+                <input type="submit" value="Filter" class="btn btn-info pull-right" />
+
+
+            }
+        }
+    </fieldset>
+</div>
+
+<br />
+<br />
+
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
